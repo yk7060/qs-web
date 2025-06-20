@@ -22,6 +22,7 @@ services:
   backend:
     image: techwithyogesh/backend:qst
     container_name: backend
+    restart: unless-stopped
     environment:
       SPRING_DATASOURCE_URL: jdbc:mysql://mysql-service:3306/quantumsoft
       SPRING_DATASOURCE_USERNAME: root
