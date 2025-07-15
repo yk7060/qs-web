@@ -1,0 +1,9 @@
+@Library('shared') _
+
+dockerPipeline(
+    agent: 'Agent7060',
+    repo: 'https://github.com/yk7060/qs-web.git',
+    imageName: 'techwithyogesh/frontend',
+    imageTag: 'latest',
+    dockerCredId: 'dockerhub-cred'
+)
